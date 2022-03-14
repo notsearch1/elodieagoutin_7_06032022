@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* header */
+header{
+    text-align: center;
+    margin: 40px 0;
+}
+#logo{
+    height: 46px;
+    width: 50px;
+}
+
+.header-section__heading{
+    font-size: 36px;
+    color:#D04F4F;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* main */
+main{
+    margin-bottom:100px;
+}
+
+/* input search */
+
+#search{
+    position:relative;
+
+}
+.search__input{
+    background-color: #E7E7E7;
+    height: 70px;
+    border-radius: 5px;
+    border:none;
+    padding:25px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+/* icone loupe */
+.fa-magnifying-glass{
+    position:absolute;
+    font-size: 25px;
+    right:30px;
+    top:20px;
+}
+#badge-ingredients{
+    display: none;
+
+}
+.badge{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.badge-cross{
+    font-size:20px;
+}
+.btn-search-group{
+    width: 50%;
+    margin:25px 0;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: start;
+    z-index: 5;
+}
+.btn-search{
+    margin-right: 25px;
+    border:none;
+    /* width: 31%; */
+    position: relative;
+    color:#FFF; 
+    cursor: pointer; 
+    z-index: 3; 
+}
+.btn-search input{
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    color:#FFF; 
+    width:100% ;
+   
+}
+.btn-search input::placeholder{
+    padding: 20px;
+    color:#FFF; 
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.fa-angle-down{
+    font-size: 14px;
+    position:absolute;
+    top:28px;
+    right: 18px;
+    
+ } 
+.bg-green{
+    background-color: #68D9A4;
+}
+.recipes-card{
+    z-index: 1;
+    width: 30%;
+    border:none;
+    margin-bottom:50px;
+}
+.card-body{
+    background-color: #E7E7E7;
+}
+.card-img-top{
+    height: 178px;
+    object-fit: cover;
+}
+.card-title{
+    font-size: 18px;
+}
+.ingredients{
+    font-size:14px;
+    font-weight: 700;
+}
+.description{
+    font-size:14px;
+    font-weight: 400;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.list{
+    display:none;
+}
+.list-block{
+    column-count: 4;
+    z-index: 5;
+}
+
+#recipes{
+    z-index: 1;
+}
+
+.group-opened{
+    width: 100%;
+}
+.btn-opened{
+    width: 50%;
+}
