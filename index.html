@@ -25,25 +25,23 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <span id="badge-ingredients" class="badge bg-primary py-2 px-3 my-3">Badge <i class="fa-regular fa-circle-xmark px-2 badge-cross"></i></span>
-            <div class="btn-search-group d-md-flex">
-                <button id="ingredient" class="btn-search">
-                    <input type="text"placeholder="Ingrédients" class="bg-primary">
+            <div class="btn-search-group">
+                <div class="btn-search bg-primary"> 
+                    <input type="text" placeholder="Ingrédients" class="bg-primary" id="ingredients">
                     <i class="fa-solid fa-angle-down"></i>
-                    <div class="list-wrapper bg-primary">
-                       <ul class="list list-block"></ul>
-                    </div>
-                </button>
-                <button id="appliances" class="btn-search">
-                    <input type="text"placeholder="Appareils" class="bg-green">
-                    <i class="fa-solid fa-angle-down"></i>
-                    <ul class="list list-block"></ul>
-                </button>
-                <button id="utensils" class="btn-search">
-                    <input type="text"placeholder="Ustensils" class="bg-danger">
-                    <i class="fa-solid fa-angle-down"></i>
-                    <ul class="list list-block"></ul>
                 </div>
-            </button>
+                <div class="btn-search bg-green">
+                    <input type="text" placeholder="Appareils" class="bg-green" id="appliances">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="bg-danger btn-search">
+                    <input type="text" placeholder="Ustensils" class="bg-danger" id="utensils">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>  
+            </div>
+            <div class="list-wrapper">
+            </div>
+                    
         </section>
         <section id="recipes">
             <div class="d-flex flex-wrap justify-content-between">

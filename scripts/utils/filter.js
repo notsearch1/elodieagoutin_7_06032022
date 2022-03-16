@@ -16,7 +16,6 @@ export class Filter{
         }
         const lowercased = tabIngredients.map(ingredient => ingredient.toLowerCase());
         let uniqueSet=lowercased.filter((item, index)=>{return lowercased.indexOf(item) === index})
-        console.log(uniqueSet)
         return uniqueSet
     }
     
@@ -48,11 +47,9 @@ export class Filter{
         for(let recipe of recipes){
             tabAppliance.push(recipe.appliance)
         }
-    
-        
         const uniqueSet= new Set(tabAppliance)
         const backToArray=[...uniqueSet]
-        console.log(backToArray)
+        return backToArray
     }
 }
 

@@ -5,35 +5,39 @@ export class FilterFactory{
 
     }
 
-
-    displayIngredients(){
-        const listIngredients=document.querySelector('.list')
-        let filter= new Filter()
-        let ingredients=filter.getByIngredient()
-        for(let ingredient of ingredients){
-            console.log(ingredient)
-            const listItem=document.createElement('li')
-            listItem.textContent=ingredient
-            listItem.classList.add('list-item')
-            listIngredients.appendChild(listItem)
+    displayElements(elementId){
+        const listWrapper=document.querySelector('.list-wrapper')
+        const ul=document.createElement('ul') 
+        ul.classList.add('list-block') 
+        let elements=this.filterElements(elementId)
+        for(let element of elements){
+            const li=document.createElement('li')
+            li.textContent=element
+            li.classList.add('list-item')
+            ul.appendChild(li)
         }
-    }
-
-    displayUstensils(){
-        const list=document.querySelector('.list')
-        let filter= new Filter()
-        let ustensils=filter.getByUstensil()
-        console.log(ustensils)
-        for(let ustensil of ustensils){
-            console.log(ustensil)
-            const listItem=document.createElement('li')
-            listItem.textContent=ustensil
-            listItem.classList.add('list-item')
-            list.appendChild(listItem)
-        }
+        listWrapper.appendChild(ul)
     }
 
 
+    filterElements(elementId){
+        let filter= new Filter()
+        if(elementId == 'ingredients'){
+        let elements=filter.getByIngredient()
+        return elements
+    }else if(elementId =='utensils'){
+        let elements=filter.getByUstensil()
+        return elements
+    }else if(elementId ==='appliances'){
+        let elements=filter.getByAppliance()
+        return elements
+    }else{
+        throw 'Unknown'
+    }
+    }
+    
+    
+    
 
 
 
